@@ -1,5 +1,6 @@
 # HAMMER-dataset
 
+Novel View Synthesis from Implicit 3D Reconstruction
 | Modality | (RGB) PSNR | (RGB) SSIM | (Depth) AbsRel | (Depth) SqRel | (Depth) RMSE | (Depth) e<1.25 | (Normal) Cos.Sim |
 |:--------:|:----------:|:----------:|:--------------:|:-------------:|:------------:|:--------------:|:----------------:|
 |    RGB   | **32.406** |    0.889   |      0.328     |    111.229    |    226.187   |      0.631     |       0.084      |
