@@ -1,4 +1,4 @@
-# HAMMER-dataset
+# On the Importance of Accurate Geometry Data for Dense 3D Vision Tasks (HAMMER-dataset)
 
 ## Novel View Synthesis from Implicit 3D Reconstruction
 Evaluation against GT for RGB, depth and surface normal estimates for different optimisation strategies (+ denotes sensor depth in modality column). We use Dense Depth Prior NeRF (https://github.com/barbararoessle/dense_depth_priors_nerf) to train NeRF with sensor depth. We indicate best with **bold text**, depth metrics in mm.
