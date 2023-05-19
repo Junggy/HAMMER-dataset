@@ -1,6 +1,11 @@
 # On the Importance of Accurate Geometry Data for Dense 3D Vision Tasks (HAMMER-dataset)
+Official dataset for [On the Importance of Accurate Geometry Data for Dense 3D Vision Tasks](https://arxiv.org/abs/2303.14840) (**HAMMER** : **H**ighly **A**ccurate **M**ulti-**M**odal Dataset for **DE**nse 3D Scene **R**egression)
 
-## Sensor Depth
+## Features
+
+## Scenes
+
+## Sensor Modalities
 
 ## Monocular Depth Estimation
 We trained monocular depth estimation with two different setups. First use MonoDepth2 (https://github.com/nianticlabs/monodepth2) pipeline with without supervision to show negative impact of noisy sensor depth when it is used as ground truth which eventually performs worse on the challenging material compared to self-supervised training (Metric : RMSE in mm). And then we trained state of the art depth prediction network () with different depth sensors to show impact of noise on the state of the art depth prediction pipelines.
