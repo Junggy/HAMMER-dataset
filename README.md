@@ -1,12 +1,14 @@
 # On the Importance of Accurate Geometry Data for Dense 3D Vision Tasks (HAMMER-dataset)
 Official dataset for [On the Importance of Accurate Geometry Data for Dense 3D Vision Tasks](https://arxiv.org/abs/2303.14840) (**HAMMER** : **H**ighly **A**ccurate **M**ulti-**M**odal Dataset for **DE**nse 3D Scene **R**egression)
-direct link to download the full dataset: http://www.campar.in.tum.de/public_datasets/2022_arxiv_jung/_dataset_processed.zip
 
-## Features
+**direct link to download the full dataset**: http://www.campar.in.tum.de/public_datasets/2022_arxiv_jung/_dataset_processed.zip
 
 ## Scenes
+HAMMER dataset comprises 13 scenes (scene**XX**) that are splitted into 10 scenes for training (scene2-11) and 3 scenes (scene12-14) for testing. Each scene has two trajectories (sceneXX_**trajX**) that are divided into few continous sequences (sceneXX_trajX_**X**) and extra trajectories that covers exactly same viewpoint but without any objects that is suitable for object removal task (sceneXX_trajX_**naked**_X)
 
 ## Sensor Modalities
+Our dataset is acquired with custom rig that comprises depth sensor for **I-ToF (Lucid Helios)**, **Active Stereo (Intel Realsense D435)**, **D-ToF (Intel Realsense L515)** and RGB sensor for **Polarization camera (Lucid Pheonix camera with Sony polarization sensor)**.
+we included rendered depth for each depth sensors (d435, l515, tof)such that one can evaluate each modality with absolute ground truth. For RGB sensor (polarization), we forwardly warped each depth sensor's depth into RGB such that one can train the network with different modalities as well as absolute ground truth.
 
 ## Monocular Depth Estimation
 We trained monocular depth estimation with two different setups. First use MonoDepth2 (https://github.com/nianticlabs/monodepth2) pipeline with without supervision to show negative impact of noisy sensor depth when it is used as ground truth which eventually performs worse on the challenging material compared to self-supervised training (Metric : RMSE in mm). And then we trained state of the art depth prediction network () with different depth sensors to show impact of noise on the state of the art depth prediction pipelines.
