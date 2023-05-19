@@ -1,5 +1,6 @@
 # On the Importance of Accurate Geometry Data for Dense 3D Vision Tasks (HAMMER-dataset)
 Official dataset for [On the Importance of Accurate Geometry Data for Dense 3D Vision Tasks](https://arxiv.org/abs/2303.14840) (**HAMMER** : **H**ighly **A**ccurate **M**ulti-**M**odal Dataset for **DE**nse 3D Scene **R**egression)
+direct link to download the full dataset: http://www.campar.in.tum.de/public_datasets/2022_arxiv_jung/_dataset_processed.zip
 
 ## Features
 
@@ -39,5 +40,3 @@ Evaluation against GT for RGB, depth and surface normal estimates for different 
 | + GT    [2]    |   32.082   |  **0.894** |    **0.001**   |   **0.001**   |   **0.049**  |    **1.000**   |     **0.001**    |
 
 For more details, please check our paper : https://arxiv.org/abs/2303.14840
-
-Or use the direct link to download the full dataset: http://www.campar.in.tum.de/public_datasets/2022_arxiv_jung/_dataset_processed.zip
